@@ -1,14 +1,13 @@
 src=$(wildcard *.c)
 obj=$(patsubst %.c,%.o,$(src))
-target=libtest1.a
+target=libtest2.a
 
 $(target):$(obj)
 	ar rcs $@ $^
-
 %.o:%.c
-	gcc -c $<
+	gcc -c $< -I../include
 
 .PHONY:clean
 
 clean:
-	rm -rf $(target) $(obj)
+	sudo rm -rf $(target) $(obj)

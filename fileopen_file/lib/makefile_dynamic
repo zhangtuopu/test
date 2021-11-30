@@ -1,0 +1,14 @@
+src=$(wildcard *.c)
+obj=$(patsubst %.c,%.o,$(src))
+target=libtest2.so
+
+$(target):$(obj)
+	gcc -shared -o $@ $^
+	sudo mv $@ /usr/lib/
+%.o:%.c
+	gcc -c -fpic $< -I../include
+
+.PHONY:clean
+
+clean:
+	sudo rm -rf $(target) $(obj) /usr/lib/$(target)
