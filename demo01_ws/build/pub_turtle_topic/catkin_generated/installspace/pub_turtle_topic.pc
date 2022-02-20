@@ -1,0 +1,8 @@
+prefix=/home/zhangtuopu/demo01_ws/install
+
+Name: pub_turtle_topic
+Description: Description of pub_turtle_topic
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

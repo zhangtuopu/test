@@ -1,0 +1,2 @@
+action_test:helloworld:moveit_tutorials:panda_moveit_config:pub_sub_node:pub_sub_tf:pub_turtle_topic:test_moveit
+-DCATKIN_DEVEL_PREFIX=/home/zhangtuopu/demo01_ws/devel -DCMAKE_INSTALL_PREFIX=/home/zhangtuopu/demo01_ws/install -G Unix Makefiles

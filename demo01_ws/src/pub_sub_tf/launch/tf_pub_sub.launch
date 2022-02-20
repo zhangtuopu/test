@@ -1,0 +1,11 @@
+<launch>
+    <node pkg="turtlesim" type="turtlesim_node" name="turtlesim_node"/>
+    <node pkg="pub_turtle_topic" type="turtle_pub" name="turtle_pub"/>
+    <node pkg="pub_sub_tf" type="pub_dynamic_tf" name="pub_dynamic_tf"/>
+    <node pkg="pub_sub_tf" type="sub_dynamic_tf" name="sub_dynamic_tf" output="screen"/>
+<!--     <node pkg="pub_turtle_topic" type="turtle_generate" name="turtle_gen" output="screen"/> -->
+
+<!--     <node pkg="pub_turtle_topic" type="turtle_pub" name="turtle_pub_cmd"/> -->
+<!--     <node pkg="turtlesim" type="turtle_teleop_key" name="turtle_key" /> -->
+<!--     <node pkg="pub_turtle_topic" type="turtle_sub" name="turtle_sub_pose"/> -->
+</launch>

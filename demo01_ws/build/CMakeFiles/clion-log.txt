@@ -1,0 +1,80 @@
+/home/zhangtuopu/clion-2021.2.2/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Release -DCATKIN_DEVEL_PREFIX=/home/zhangtuopu/demo01_ws/devel -DCMAKE_INSTALL_PREFIX=/home/zhangtuopu/demo01_ws/install -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /home/zhangtuopu/demo01_ws/src
+-- Using CATKIN_DEVEL_PREFIX: /home/zhangtuopu/demo01_ws/devel
+-- Using CMAKE_PREFIX_PATH: /opt/ros/melodic
+-- This workspace overlays: /opt/ros/melodic
+-- Found PythonInterp: /usr/bin/python2 (found suitable version "2.7.17", minimum required is "2") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python2
+-- Using Debian Python package layout
+-- Using empy: /usr/bin/empy
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /home/zhangtuopu/demo01_ws/build/test_results
+-- Found gtest sources under '/usr/src/googletest': gtests will be built
+-- Found gmock sources under '/usr/src/googletest': gmock will be built
+CMake Deprecation Warning at /usr/src/googletest/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+CMake Deprecation Warning at /usr/src/googletest/googlemock/CMakeLists.txt:41 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+CMake Deprecation Warning at /usr/src/googletest/googletest/CMakeLists.txt:48 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- Found PythonInterp: /usr/bin/python2 (found version "2.7.17") 
+-- Using Python nosetests: /usr/bin/nosetests-2.7
+-- catkin 0.7.29
+-- BUILD_SHARED_LIBS is on
+-- BUILD_SHARED_LIBS is on
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- ~~  traversing 8 packages in topological order:
+-- ~~  - panda_moveit_config
+-- ~~  - helloworld
+-- ~~  - pub_sub_node
+-- ~~  - pub_turtle_topic
+-- ~~  - action_test
+-- ~~  - pub_sub_tf
+-- ~~  - moveit_tutorials
+-- ~~  - test_moveit
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- +++ processing catkin package: 'panda_moveit_config'
+-- ==> add_subdirectory(panda_moveit_config)
+-- +++ processing catkin package: 'helloworld'
+-- ==> add_subdirectory(helloworld)
+-- +++ processing catkin package: 'pub_sub_node'
+-- ==> add_subdirectory(pub_sub_node)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- pub_sub_node: 2 messages, 1 services
+-- +++ processing catkin package: 'pub_turtle_topic'
+-- ==> add_subdirectory(pub_turtle_topic)
+-- +++ processing catkin package: 'action_test'
+-- ==> add_subdirectory(action_test)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- Generating .msg files for action action_test/AddInts /home/zhangtuopu/demo01_ws/src/action_test/action/AddInts.action
+-- action_test: 7 messages, 0 services
+-- +++ processing catkin package: 'pub_sub_tf'
+-- ==> add_subdirectory(pub_sub_tf)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- +++ processing catkin package: 'moveit_tutorials'
+-- ==> add_subdirectory(moveit_tutorials)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- +++ processing catkin package: 'test_moveit'
+-- ==> add_subdirectory(test_moveit)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/zhangtuopu/demo01_ws/build

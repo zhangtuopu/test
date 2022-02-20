@@ -1,0 +1,9 @@
+<launch>
+    <node pkg="turtlesim" type="turtlesim_node" name="turtle_GUI"/>
+    <node pkg="pub_turtle_topic" type="turtle_back" name="turtle_back" output="screen"/>
+<!--     <node pkg="pub_turtle_topic" type="turtle_generate" name="turtle_gen" output="screen"/> -->
+
+<!--     <node pkg="pub_turtle_topic" type="turtle_pub" name="turtle_pub_cmd"/> -->
+<!--     <node pkg="turtlesim" type="turtle_teleop_key" name="turtle_key" /> -->
+<!--     <node pkg="pub_turtle_topic" type="turtle_sub" name="turtle_sub_pose"/> -->
+</launch>

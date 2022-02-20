@@ -1,0 +1,8 @@
+prefix=/home/zhangtuopu/demo01_ws/devel
+
+Name: pub_sub_tf
+Description: Description of pub_sub_tf
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
