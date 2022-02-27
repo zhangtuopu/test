@@ -1,0 +1,27 @@
+pip3 install pyserial
+
+import serial 
+import time
+import binascii
+num=[None]*5
+ser=serial.Serial("/dev/ttyTHS1",115200) #使用THS1连接串行口,THS1，对应nano上面的物理引脚8 10
+def recv():
+    print("receive test.......")
+    while True:
+        for i in range (0,5):
+            data=str(binascii.b2a_hex(ser.read(1)))[2:-1]
+            num[i]=data     
+        if((num[0]=='5a') and (num[1]=='a5')): 
+            print(num)
+def write():
+    print("write test.......")
+    while True:      
+        flag="5AA50D8203105AA5010000020000"
+        ser.write(bytes.fromhex(flag))
+        time.sleep(1)        
+op=input("enter the operation:")
+if op =="0":
+    recv()
+elif op=="1":
+    write()
+
