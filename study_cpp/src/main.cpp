@@ -19,8 +19,8 @@ int main() {
         }
         vmid=vbegin+(vend-vbegin)/2;
     }
-
-    int tt=0;
-    std::cout<<tt<<++tt<<std::endl;
+    int i=0;
+    int j=i++;
+    std::cout<<j<<std::endl;
     return 0;
 }
