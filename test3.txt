@@ -1,0 +1,19 @@
+dot_last_pose_error = dot_current_pose_error;
+      last_pose_error = current_pose_error;
+
+      ddot_current_pose_error =
+          M_matrix_66.inverse() * ((F_error - F_back) - B_matrix_66 * dot_last_pose_error -
+                                   K_matrix_66 * (last_pose_error - X_r));
+      dot_current_pose_error = dot_last_pose_error + ddot_current_pose_error * cal_dt;
+      current_pose_error = last_pose_error + dot_current_pose_error * cal_dt;
+
+      reference_pose[0] = current_pose_error[0];
+      reference_pose[1] = current_pose_error[1];
+      reference_pose[2] = current_pose_error[2];
+
+      // reference_pose[2] = 0.001 * sin(time / 10);
+      new_pose[14] = initial_pose[14] + current_pose_error[2];
+      // cout << "Z位置： " << new_pose[14] << endl;
+      //
+      franka::CartesianVelocities output = {{dot_current_pose_error[0], dot_current_pose_error[1],
+                                             dot_current_pose_error[2], 0.0, 0.0, 0.0}};
