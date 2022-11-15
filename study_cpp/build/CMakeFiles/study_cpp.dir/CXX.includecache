@@ -6,12 +6,12 @@
 
 #IncludeRegexTransform: 
 
-/home/zhangtuopu/code_test/test/study_cpp/src/main.cpp
+/home/zhangtuopu/test/study_cpp/src/main.cpp
 iostream
 -
-string
--
 sstream
+-
+string
 -
 vector
 -
